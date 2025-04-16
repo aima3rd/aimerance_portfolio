@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimerance Lualaba</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .project-grid, .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-card, .experience-card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3, .experience-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .skills-list, .languages-list, .hobbies-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .skills-list li, .languages-list li, .hobbies-list li {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aimerance Lualaba</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <img src="profil.jpg" alt="Photo d'Aimerance Lualaba" class="profile-pic">
+        <h2>Bienvenue !</h2>
+        <p>Découvrez mes compétences, projets et passions.</p>
+    </section>
+
+    <section id="a-propos">
+        <h2>À propos de moi</h2>
+        <p>Je suis Aimerance Lualaba,
+            Étudiante en sciences informatiques, je me spécialise dans le développement logiciel et web, avec une soif d'apprendre et de relever de nouveaux défis techniques. Bien que mes expériences professionnelles soient encore en construction, je me forge un solide bagage à travers des projets personnelles. Mon objectif ? Transformer des idées en solutions fonctionnelles, avec un code propre, optimisé et innovant.
+        <h3>Compétences techniques</h3>
+        <ul class="skills-list">
+            <li>Développement Front-End (HTML, CSS, JavaScript)</li>
+            <li>Développement Back-End (Python)</li>
+        </ul>
+
+        <h3>Langues parlées</h3>
+        <ul class="languages-list">
+            <li>Français (C2 - Niveau natif)</li>
+            <li>Anglais (C1 - Avancé)</li>
+            <li>Swahili (B2 - Intermédiaire avancé)</li>
+            <li>Allemand (A1 - Débutant)</li>
+            <li>Italien (A1 - Débutant)</li>
+        </ul>
+
+        <h3>Hobbies et intérêts</h3>
+        <ul class="hobbies-list">
+            <li>Voyages et découverte de nouvelles cultures</li>
+            <li>Lecture de livres variés</li>
+            <li>Programmation</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience professionnelle</h2>
+        <div class="experience-grid">
+            
+            <div class="experience-card">
+                <h3>Completed an internship at Informiz, an Indian software solutions company.</h3>
+                <p>2022 - 2023</p>
+                <p>Participation à des projets d'équipe, développement de fonctionnalités pour des applications web.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Mes projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Projet 1</h3>
+                <p>En cours de développement.</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet 2</h3>
+                <p>En cours de développement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contactez-moi par e-mail ou via mes réseaux sociaux :</p>
+        <p><strong>E-mail :</strong> aimerancelualaba@gmail.com</p>
+        <div class="social-links">
+            <a href="https://github.com/aima3rd" target="_blank">
+                <img src="github-logo.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/share/1FJ743W27E/" target="_blank">
+                <img src="Facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/aimy-llb-42925b322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="Linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Aimerance Lualaba. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
